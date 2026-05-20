@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=980">
+	<meta http-equiv="Content-Style-Type" content="text/css" />
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+	<meta name="description" content="楠部凜の個人ホームページです。" />
+	<meta name="keywords" contnt="楠部凜, KUSUBE Rin, 北里大学, 臨床心理学, 老化, 適応, 投映法, 心理的自律性, 老いの受容" />
+	<title>楠部凜 KUSUBE Rin</title>
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<style>
+		body {
+			background-image: url("草/mybg.jpg");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+		}
+
+		#wrapper {
+			background: transparent;
+		}
+	</style>
+	<!--[if lt IE 9]>
+<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/common.js"></script>
+	<script type="text/javascript" src="js/rollover2.js"></script>
+	<script type="text/javascript" src="js/jquery.cycle.all.js"></script>
+	<script type="text/javascript"><!-- top-imageスライド -->
+		$(function () {
+			$('div#jquery-cycle').cycle({
+				speed: 1500,
+				timeout: 4500
+			});
+		});
+	</script>
+	<script>
+		$(function () {
+			hTop = $('#side_contents').offset().top;
+		});
+		$(window).scroll(function () {
+			if ($(window).scrollTop() > hTop - 35) {
+				$('#side_contents').css('position', 'fixed');
+				$('#side_contents').css('top', '20px');
+				$('#side_contents').css('margin-left', '0px');
+			} else {
+				$('#side_contents').css('position', 'static');
+				$('#side_contents').css('margin-left', '0px');
+			}
+		});
+	</script>
+
+	<script type="text/javascript">
+		$(function () {
+			$('#pageTop').hide();					// 「ページトップへ」の要素を隠す
+			$(window).scroll(function () {		// スクロールした場合
+				if ($(this).scrollTop() > 100) {	// スクロール位置が100を超えた場合
+					$('#pageTop').fadeIn();		// 「ページトップへ」をフェードイン
+				}
+				else {										// スクロール位置が100以下の場合
+					$('#pageTop').fadeOut();		// 「ページトップへ」をフェードアウト
+				}
+			});
+			$('#pageTop').click(function () {	// 「ページトップへ」をクリックした場合
+				$('html,body').animate({			// ページトップにスクロール
+					scrollTop: 0
+				}, 300);
+				return false;
+			});
+		});
+	</script>
+
+	<!-- og tag -->
+	<meta property="og:type" content="website" />
+	<meta property="og:site_name" content="KUSUBE Rin" />
+	<meta property="og:title" content="KUSUBERin" />
+	<meta property="fb:app_id" content="" />
+	<meta property="og:url" content="http://square.umin.ac.jp/fukase/" />
+	<meta property="og:description" content="楠部凜の個人ホームページです。" />
+	<meta property="og:image" content="http://square.umin.ac.jp/fukase/images/opg.png" />
+
+
+</head>
+
+<body>
+	<div id="wrapper">
+
+		<div id="all_logo" style="position:relative; width:180px; height:250px; margin-top: 200px;">
+
+			<div style="
+        color:red;
+        font-size:48px;
+        font-weight:bold;
+        writing-mode: vertical-rl;
+        position:absolute;
+        left:20px;
+        top: -100px;
+    ">
+				楠部凜
+			</div>
+
+			<div style="
+        color:red;
+        font-size:14px;
+		writing-mode: vertical-rl;
+        position:absolute;
+        left: 100px;
+        top: -90px;
+    ">
+				KUSUBE Rin
+			</div>
+
+		</div>
+
+
+		<div id="contents" style="margin-top: -450px;">
+
+
+			<div class="header_bg">
+				<div class="header">
+
+					<div id="headerNavi1">
+						<p>楠部凜の個人ホームページです。</p>
+					</div>
+					<div class="clear"></div>
+				</div><!-- /#header -->
+			</div><!-- /#header_bg -->
+
+
+			<div class="index_contents">
+				<div class="index_visual">
+					<div id="jquery-cycle">
+						<img src="images/index_photo1.jpg" alt="トップページ画像1" width="760" height="400">
+						<img src="images/index_photo2.jpg" alt="トップページ画像2" width="760" height="400">
+						<img src="images/index_photo3.jpg" alt="トップページ画像2" width="760" height="400">
+						<img src="images/index_photo4.jpg" alt="トップページ画像4" width="760" height="400">
+					</div>
+				</div>
+				<div class="index_content_box_a clearfix">
+					<p class="index_content_title">About Me</p>
+					<p>
+						初めまして。現在広島大学情報科学部情報科学科一年の楠部凜と申します。<br>
+						このたびはわたくしの個人ページを閲覧いただきありがとうございます。<br>
+						わたくしの趣味は現在主にゲーム、アニメで、大学内ではゲーム制作同好会というサークルに所属しています。<br>
+						また、私は先ほどの二つ以外にも意外と多趣味で、友達から紹介されたものに触れてみて自分もそれが好きになることがよくあるのでいろいろと皆さんのしゅみも教えてほしいです。<br>
+						このホームページでは、私の趣味や日常生活などを中心に、私のことを知ってもらえるような内容を発信していきたいと思っています。<br>
+						こらからもこのホームページは随時更新していくつもりなのでよければ時折閲覧いただければとおもいます。<br>
+					</p>
+
+				</div>
+
+
+			</div><!-- main_contentsここまで -->
+
+
+
+
+		</div><!-- /#contents -->
+
+
+	</div><!-- /#wrapper -->
+
+
+
+
+
+
+
+	<div class="footer_wrap">
+		<div class="footer1">
+			<div class="footer_nav">
+				<p class="footer_nav_title"><a href="index.html">
+						<p class="footer_nav_title">
+							楠部凜 WEB SITE
+						</p>
+
+			</div>
+			<div class="footer_nav_last">
+				<div class="copyright">Copyright (c) KUSUBE Rin.All rights reserved.</div>
+			</div>
+			<div class="clear"></div>
+		</div><!-- /#footer1 -->
+
+	</div><!-- /#footer_wrap -->
+
+</body>
+
+</html>
